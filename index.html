@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <!-- google icon font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- local stylesheet -->
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <!--mobile optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Green Knights</title>
+    <meta name="description" content="Promoting UCF students to become active citizens by advocating for sustainable student living. Join the green revolution!">
+
+</head>
+
+<body>
+    <img style="float:left;" src="https://via.placeholder.com/150" alt="Green Knights Logo">
+
+    <!-- NAV BUTTON -->
+    <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
+    <div id="navDiv">
+    <ul id="navList">
+        <li>Home</li>
+        <li>Get Involved</li>
+        <li>Team</li>
+    </ul>
+    </div>
+
+<!-- BEGIN LOCAL SCRIPTS -->
+    <script>
+        // menu functionality
+        function circleNav() {
+                var x = document.getElementById("navDiv");
+                if (x.style.display == "block") {
+                    x.style.display = "none";
+                    document.getElementById("menu").src = "imgs/hamburger.png";
+                } else {
+                    x.style.display = "block";
+                    document.getElementById("menu").src = "imgs/x.png";
+                }
+            }
+
+    </script>
+</body>
+
+</html>

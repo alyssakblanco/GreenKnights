@@ -1,0 +1,25 @@
+body{
+    background-color: #fef7ea;
+}
+
+#navDiv {
+  width: 100%;
+  /* padding: 50px 0; */
+  text-align: center;
+  /* margin-top: 20px; */
+  display: none;
+  text-align: right;
+}
+#navButton{
+    background-color: #bd4864;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    float: right;
+}
+#navList{
+    list-style: none;
+    font-size: 6vw;
+    margin: 0;
+    padding-top: 60px;
+}
