@@ -4,27 +4,29 @@ body{
 
 #navDiv {
     background-color: #fef7ea;
-    /* position: -webkit-sticky; Safari */
     position: fixed;
-    top: 50px;
-    right: 0;
+    height: 100%;
+    width: 100%;
     display: none;
-    z-index: 99;
-    text-align: right;
+    text-align: center;
+    line-height: 2;
 }
 #navButton{
     background-color: #bd4864;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0;
+    top: 2vh;
+    right: 2vh;
     float: right;
+    z-index: 99;
 }
 #navList{
     list-style: none;
-    font-size: 6vw;
+    font-size: 3vw;
     margin: 0;
     padding-top: 60px;
 }
+
 
 /* HELPER CLASSES */
 .under{
