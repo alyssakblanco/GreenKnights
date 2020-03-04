@@ -3,15 +3,14 @@ body{
 }
 
 #navDiv {
-  /* width: 100%; */
-  /* padding: 50px 0; */
-  text-align: center;
-  /* margin-top: 20px; */
-  display: none;
-  text-align: right;
-      position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+    background-color: #fef7ea;
+    /* position: -webkit-sticky; Safari */
+    position: fixed;
+    top: 50px;
+    right: 0;
+    display: none;
+    z-index: 99;
+    text-align: right;
 }
 #navButton{
     background-color: #bd4864;
@@ -35,5 +34,8 @@ body{
 }
 .center{
     text-align: center;
+}
+.half{
+    width: 50%;
 }
 
