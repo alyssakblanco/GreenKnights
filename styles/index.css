@@ -3,23 +3,37 @@
     position: relative;
     margin: 0px;
     padding: 0px;
-    width: 88vw;
+    width: 100vw;
     height: 35vw;
     overflow: hidden;  
-    /* opacity: 0.8; */
 }
-@media only screen and (max-width: 768px){
-    .homeImg{  width:100%;  }
-}
+
 .roomTitle{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 5vh;
     position: absolute;
     top: 3%;
     left: 3%;
     font-size: 2.5em;
+    color: #D1EA80;
+    text-shadow: 3px 3px 8px black;
+    text-decoration: none;
+}
+@media only screen and (max-width: 768px){
+    .roomTitle{
+        font-size: 3vh;
+    }
 }
 .transparent{
   opacity: 0.6;
+  background-color: black;
 }
-.transparent:hover{
-    opacity: 1;
+/* .transparent:hover{
+    opacity: 1; */
+}
+.green{
+    color: #D1EA80;
+    text-shadow: 3px 3px 8px black;
+    text-decoration: none;
 }

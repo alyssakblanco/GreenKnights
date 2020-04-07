@@ -1,28 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body{
     background-color: #fef7ea;
-    margin-left: 6vw;
-    margin-right: 6vw;
 }
-@media only screen and (max-width: 768px){
-    body{margin: 0px;}
-}
-
 h1{
     font-family: 'Montserrat';
-    
+    font-weight: bold;
     font-size: 6vh;
+    color: #3E9228;
 }
 h2{
     font-family: 'Montserrat';
-    font-weight: bold;
     font-size: 5vh;
-    color: #3e9228;
 }
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 2vh;
+    font-size: 3vh;
 }
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 4vh;
+    }
+    h2{
+        font-size: 3vh;
+    }
+    p{
+        font-size: 2vh;
+    }
+}
+
 .centertxt{
     float:left;
     width:100%;
@@ -53,6 +58,7 @@ p{
     display: none;
     text-align: center;
     line-height: 2;
+    z-index: 99;
 }
 #navButton{
     background-color: #bd4864;
@@ -61,16 +67,27 @@ p{
     top: 2vh;
     right: 2vh;
     float: right;
-    z-index: 99;
+    z-index: 100;
 }
 #navList{
     list-style: none;
-    font-size: 3vw;
+    font-size: 2vw;
     margin: 0;
     padding-top: 60px;
+    z-index: 99;
 }
 #dropdown {
     position: relative;
     display: none;
+}
+ul li a{
+    font-family: 'Montserrat';
+    color: black;
+    font-size: 3vh;
+}
+#greenNav{
+    font-family: 'Montserrat';
+    color: green;
+    font-size: 3vh;
 }
 /* END NAV CSS */
