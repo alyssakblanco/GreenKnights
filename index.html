@@ -1,91 +1,121 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
 
-    <meta charset="utf-8">
-    <!-- google icon font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- materialize JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- local stylesheet -->
-    <link type="text/css" rel="stylesheet" href="stylesheet.css">
-    <!--mobile optimization-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- google icon font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- materialize JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <title>Green Knights</title>
-    <meta name="description" content="Promoting UCF students to become active citizens by advocating for sustainable student living. Join the green revolution!">
+        <!-- local stylesheet -->
+        <link type="text/css" rel="stylesheet" href="styles/main.css">
+        <link type="text/css" rel="stylesheet" href="styles/index.css">
+        
+        <!--screen optimization-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</head>
+        <!-- SEO -->
+        <title>Green Knights</title>
+        <meta name="description" content="Promoting UCF students to become active citizens by advocating for sustainable student living. Join the green revolution!">
+    </head>
 
-<body>
+    <body>
+  
+        <img id="logo" src="imgs/logo.png" alt="Green Knights Logo">
 
-    <img style="float:left;" src="https://via.placeholder.com/250x100" alt="Green Knights Logo">
-
-    <!-- NAV BUTTON -->
-    <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
-    <div id="navDiv">
-        <ul id="navList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="involved.html">Get Involved</a></li>
-            <li><a href="team.html">Team</a></li>
-        </ul>
-    </div>
-
-    <div class="under container center">
-        <h1>Welcoming Header Here</h1>
-        <p>Text that explains our purpose and Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua.</p>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="container center">
-        <h2>#DormLifeUCF</h2>
-        <p>Lorum ipsum here are some ways for students to stay green on campus and in dorms</p>
-    </div>
-
-    <div class="container row">
-        <div class="col s6">
-            <h3>Get Your Room Into the Green Scene</h3>
-            <p>Can we get a watt watt? Switching to LEDs is way more energy efficient, and LEDs don’t contain mercury like CFLs. Go
-            natural and take advantage of natural light when needed.
-            <br>
-            Get green curtains for certain! Get crafty and make your own blinds from recycled textiles (like a flat sheet: Link to
-            DIY). Save energy and keep those Florida cooling bills down by keeping them closed during the day.
-            <br>
-            Shop used furniture. Second hand furniture is easy to come by! Shop your local thrift, or online listings for lightly
-            used furniture, or buy vintage pieces and give them a makeover.
-            </p>
+        <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
+        <div id="navDiv">
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="involved.html">Get Involved</a></li>
+                <li onclick="drop()">Green Rooms<i class="material-icons">expand_more</i></li>
+                <div id="dropdown">
+                    <li><a href="bathroom.html">Bathroom</a></li>
+                    <li><a href="bedroom.html">Bedroom</a></li>
+                    <li><a href="cleaning.html">Cleaning Supplies</a></li>
+                    <li><a href="kitchen.html">Kitchen</a></li>
+                    <li><a href="plants.html">Plants</a></li>
+                    <li><a href="student.html">Workspace</a></li>                            
+                </div>
+                <li><a href="team.html">Meet the Team</a></li>
+            </ul>
         </div>
-        <div class="col s6">
-            <img style="width:100%;"src="https://via.placeholder.com/542x648">
-            <p>Eco friendly bedding consists of natural materials like cotton, or hemp as opposed to synthetic petroleum-based
-            materials like polyester.
-            <br>
-            Say no to aerosol sprays and opt for natural scents like essential oils, or open up the windows for some good old
-            fashioned fresh air.
-            </p>
+         
+        <!-- HOME PAGE HEADING -->
+        <div class="centertxt">
+            <h1>Living Green on Campus</h1>
+            <p>We are an organization based around going green with dorm life.
+            Explore the rooms below to see how you can transform your dorm into a more eco-friendly space.</p>
         </div>
-    </div>
+
+        <!-- BEGIN IMG ROOM LINKS -->
+        <!-- <div id="home"> -->
+        <div class="homeImg">
+            <div class="transparent">
+                <a href="bathroom.html"><img class="homeImg" src="imgs/bathroom/bathroom.png" alt="Explore Bathroom"></a>
+            </div> 
+            <h2 class="roomTitle">Bathroom</h2> 
+        </div>
+        <div class="homeImg">
+            <div class="transparent">
+                <a href="bedroom.html"><img class="homeImg" src="imgs/bedroom/bedroom.png" alt="Explore Bedroom"></a>
+            </div> 
+            <h2 class="roomTitle">Bedroom</h2> 
+        </div>
+        <div class="homeImg">
+            <div class="transparent">
+                <a href="cleaning.html"><img class="homeImg" src="imgs/cleaning/cleaning.jpg" alt="Explore Cleaning Supplies"></a>
+            </div> 
+            <h2 class="roomTitle">Cleaning Supplies</h2> 
+        </div>
+        <div class="homeImg">
+            <div class="transparent">
+                <a href="kitchen.html"><img class="homeImg" src="imgs/kitchen/kitchen.png" alt="Explore Kitchen"></a>
+            </div> 
+            <h2 class="roomTitle">kitchen</h2> 
+        </div>
+        <div class="homeImg">
+            <div class="transparent">
+                <a href="plants.html"><img class="homeImg" src="imgs/plants/plants1.png" alt="Explore Plants"></a>
+            </div> 
+            <h2 class="roomTitle">plants</h2> 
+        </div>
+        <div class="homeImg">
+            <div class="transparent">
+                <a href="workspace.html"><img class="homeImg" src="imgs/workspace/workspace.png" alt="Explore Workspace"></a>
+            </div> 
+            <h2 class="roomTitle">workspace</h2> 
+        </div>
 
 
-<!-- BEGIN LOCAL SCRIPTS -->
-    <script>
-        // menu functionality
-        function circleNav() {
-                var x = document.getElementById("navDiv");
-                if (x.style.display == "block") {
-                    x.style.display = "none";
-                    document.getElementById("menu").src = "imgs/hamburger.png";
-                } else {
-                    x.style.display = "block";
-                    document.getElementById("menu").src = "imgs/x.png";
-                }
+        <script>
+            // NAV FUNCTIONS
+            function circleNav() {
+                    var x = document.getElementById("navDiv");
+                    if (x.style.display == "block") {
+                        x.style.display = "none";
+                        document.getElementById("menu").src = "imgs/hamburger.png";
+                    } else {
+                        x.style.display = "block";
+                        document.getElementById("menu").src = "imgs/x.png";
+                    }
             }
+            function drop() {
+                // document.getElementById("dropdown").classList.toggle("show");
 
-    </script>
-</body>
+                var dropmenu = document.getElementById("dropdown");
+                if (dropmenu.style.display == "block") {
+                    dropmenu.style.display = "none";
+                    } else {
+                        dropmenu.style.display = "block";
+                    }
 
+            }
+            // END NAV FUNCTIONS
+    
+        </script>
+    </body>
 </html>

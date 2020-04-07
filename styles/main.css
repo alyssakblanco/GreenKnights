@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    background-color: #fef7ea;
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+@media only screen and (max-width: 768px){
+    body{margin: 0px;}
+}
+
+h1{
+    font-family: 'Montserrat';
+    
+    font-size: 6vh;
+}
+h2{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 5vh;
+    color: #3e9228;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+}
+.centertxt{
+    float:left;
+    width:100%;
+    text-align:center;
+    padding-left:8vh;
+    padding-right:8vh;
+}
+
+/* LOGO */
+#logo{
+    width: 15%;
+    float: left;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+@media only screen and (max-width: 768px){
+    #logo{
+        width: 30%;
+    }
+}
+
+/* NAVIGATION CSS */
+#navDiv {
+    background-color: #fef7ea;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: none;
+    text-align: center;
+    line-height: 2;
+}
+#navButton{
+    background-color: #bd4864;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 2vh;
+    right: 2vh;
+    float: right;
+    z-index: 99;
+}
+#navList{
+    list-style: none;
+    font-size: 3vw;
+    margin: 0;
+    padding-top: 60px;
+}
+#dropdown {
+    position: relative;
+    display: none;
+}
+/* END NAV CSS */

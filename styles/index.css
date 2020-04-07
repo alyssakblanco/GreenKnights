@@ -1,0 +1,25 @@
+
+.homeImg{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 88vw;
+    height: 35vw;
+    overflow: hidden;  
+    /* opacity: 0.8; */
+}
+@media only screen and (max-width: 768px){
+    .homeImg{  width:100%;  }
+}
+.roomTitle{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    font-size: 2.5em;
+}
+.transparent{
+  opacity: 0.6;
+}
+.transparent:hover{
+    opacity: 1;
+}
