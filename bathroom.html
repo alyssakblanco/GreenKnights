@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- google icon font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- materialize JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- local stylesheet -->
+        <link type="text/css" rel="stylesheet" href="styles/main.css">
+        <link type="text/css" rel="stylesheet" href="styles/bathroom.css">
+        
+        <!--screen optimization-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO -->
+        <title>Green Knights | Bathroom</title>
+        <meta name="description" content="Green Tips for UCF student living bathrooms.">
+    </head>
+
+    <body>
+        <!-- NAV AND LOGO -->
+        <div id="topDiv">
+            <img id="logo" src="imgs/logo.png" alt="Green Knights Logo">
+
+            <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
+            <div id="navDiv">
+                <ul id="navList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="involved.html">Get Involved</a></li>
+                    
+                    <li onclick="drop()"id="greenNav"style="font-weight:bold;">Explore Rooms</li>
+                    <div id="dropdown">
+                        <div style="float:left;width:50%;text-align:right;padding-right:1vw;">
+                        <li><a id="greenNav" href="bathroom.html">Bathroom</a></li>
+                        <li><a id="greenNav" href="bedroom.html">Bedroom</a></li>
+                        <li><a id="greenNav" href="cleaning.html">Cleaning Supplies</a></li>
+                        </div>
+                        <div style="float:right;width:50%;text-align:left;padding-left:1vw;">
+                        <li><a id="greenNav" href="kitchen.html">Kitchen</a></li>
+                        <li><a id="greenNav" href="plants.html">Plants</a></li>
+                        <li><a id="greenNav" href="student.html">Workspace</a></li> 
+                        </div>
+                    </div>
+                    <li><a href="team.html">Meet the Team</a></li>
+                </ul>
+            </div>
+        </div>
+         
+        <!-- HOME PAGE HEADING -->
+        <div class="centertxt">
+            <h1>Turn You Hygiene Into Hy-Green</h1>
+        </div>
+
+        <!-- MAIN ROOM SECTION -->
+        <div style="float:left;"class="room">
+            <img style="width:100%;" src="imgs/bathroom/bathroom.png"/>  
+            
+            <div class="one">
+                <p class="bubble">1</p>
+            </div>
+            <div class="two">
+                <p class="bubble">2</p>
+            </div>
+            <div class="three">
+                <p class="bubble">3</p>
+            </div>
+            <div class="four">
+                <p class="bubble">4</p>
+            </div>
+            <div class="five">
+                <p class="bubble">5</p>
+            </div>
+            <div class="six">
+                <p class="bubble">6</p>
+            </div>
+            <div class="seven">
+                <p class="bubble">7</p>
+            </div>
+            <div class="eight">
+                <p class="bubble">8</p>
+            </div>
+
+        </div>
+
+        
+        <script src="bathroom.js"></script>
+        <script>
+            // NAV FUNCTIONS
+            function circleNav() {
+                    var x = document.getElementById("navDiv");
+                    if (x.style.display == "block") {
+                        x.style.display = "none";
+                        document.getElementById("menu").src = "imgs/hamburger.png";
+                    } else {
+                        x.style.display = "block";
+                        document.getElementById("menu").src = "imgs/x.png";
+                    }
+            }
+            function drop() {
+                // document.getElementById("dropdown").classList.toggle("show");
+
+                var dropmenu = document.getElementById("dropdown");
+                if (dropmenu.style.display == "block") {
+                    dropmenu.style.display = "none";
+                    } else {
+                        dropmenu.style.display = "block";
+                    }
+
+            }
+            // END NAV FUNCTIONS
+    
+        </script>
+    </body>
+</html>

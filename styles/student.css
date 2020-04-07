@@ -1,0 +1,31 @@
+
+div.absolute1{
+    position: absolute;
+    left: 52%;
+    top: 30%;
+    cursor: pointer;
+}
+div.absolute2{
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    cursor: pointer;
+}
+div.absolute3{
+    position: absolute;
+    left: 38%;
+    top: 83%;
+    cursor: pointer;
+}
+div.absolute4{
+    position: absolute;
+    left: 20%;
+    top: 75%;
+    cursor: pointer;
+}
+div.absolute5{
+    position: absolute;
+    left: 48%;
+    top: 65%;
+    cursor: pointer;
+}

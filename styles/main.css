@@ -5,12 +5,17 @@ body{
 h1{
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 6vh;
+    font-size: 5vh;
     color: #3E9228;
 }
 h2{
     font-family: 'Montserrat';
-    font-size: 5vh;
+    font-size: 4vh;
+}
+h3{
+    font-family: 'Montserrat';
+    font-size: 3vh;
+    color: #3E9228;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -29,11 +34,12 @@ p{
 }
 
 .centertxt{
-    float:left;
+    /* float:left; */
     width:100%;
     text-align:center;
     padding-left:8vh;
     padding-right:8vh;
+    display: inline-block;
 }
 
 /* LOGO */
@@ -90,4 +96,105 @@ ul li a{
     color: green;
     font-size: 3vh;
 }
+#topDiv{
+    float:left;
+    width:100%;
+}
 /* END NAV CSS */
+
+/* ROOM PAGES */
+p.bubble{
+    /* font-family: 'Montserrat';
+    font-weight: bold; */
+    font-size: 25px;
+    border-radius:50%;
+    border: 2px solid #082b08;
+    background:white;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin: auto;
+}
+p.bubble:hover{
+    background:#d1ea80;
+}
+div.room{
+    position: relative;
+    width:100%;
+    margin: 0px;
+    float: left;
+}
+.modals{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4); 
+}
+.popup{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 50%;
+    padding: 5%;
+    background-color: white;
+    border-radius: 25px;
+}
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-weight: bold;
+}
+.close:hover, .close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* mobile css */
+.mobilecontentleft{
+    display:none;
+}
+.mobilecontentright{
+    display:none;
+}
+
+@media only screen and (max-width: 768px){
+    div.absolute1{
+        visibility:hidden;
+    }
+    div.absolute2{
+        visibility:hidden;
+    }
+    div.absolute3{
+        visibility:hidden;
+    }
+    div.absolute4{
+        visibility:hidden;
+    }
+    div.absolute5{
+        visibility:hidden;
+    }
+    .mobilecontentleft{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 2%;
+        text-align:right;
+    }
+    .mobilecontentright{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 2%;
+        
+    }
+    .mobileimg{
+        width:90%;
+        margin: auto;
+    }
+    
+}
+

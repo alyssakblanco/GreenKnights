@@ -3,140 +3,62 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sustainable Student - Green Knights</title>
-    <meta name="description" content="Tips for Knights to stay green while they study">
+    <!-- google icon font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<style>
-p.bubble{
-    font-size: 25px;
-    border-radius:50%;
-    border: 2px solid #082b08;
-    background:white;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    margin: auto;
-}
-p.bubble:hover{
-    background:#d1ea80;
-}
-div.relative{
-    position: relative;
-    width:100%;
-    margin: 0px;
-}
-div.absolute1{
-    position: absolute;
-    left: 52%;
-    top: 30%;
-    cursor: pointer;
-}
-div.absolute2{
-    position: absolute;
-    left: 20%;
-    top: 45%;
-    cursor: pointer;
-}
-div.absolute3{
-    position: absolute;
-    left: 38%;
-    top: 83%;
-    cursor: pointer;
-}
-div.absolute4{
-    position: absolute;
-    left: 20%;
-    top: 75%;
-    cursor: pointer;
-}
-div.absolute5{
-    position: absolute;
-    left: 48%;
-    top: 65%;
-    cursor: pointer;
-}
-.modal{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left:0;
-    top:0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4); 
-}
-.popup{
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    width: 50%;
-    padding: 5%;
-    background-color: white;
-    border-radius: 25px;
-}
-.close{
-    color: #aaaaaa;
-    float: right;
-    font-weight: bold;
-}
-.close:hover, .close:focus{
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* mobile css */
-.mobilecontentleft{
-    display:none;
-}
-.mobilecontentright{
-    display:none;
-}
-
-@media only screen and (max-width: 768px){
-    div.absolute1{
-        visibility:hidden;
-    }
-    div.absolute2{
-        visibility:hidden;
-    }
-    div.absolute3{
-        visibility:hidden;
-    }
-    div.absolute4{
-        visibility:hidden;
-    }
-    div.absolute5{
-        visibility:hidden;
-    }
-    .mobilecontentleft{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        padding: 2%;
-    }
-    .mobilecontentright{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        padding: 2%;
-    }
-    .mobileimg{
-        width:60%;
-    }
+    <!-- local stylesheet -->
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link type="text/css" rel="stylesheet" href="styles/student.css">
     
-}
+    <!--screen optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</style>
+    <!-- SEO -->
+    <title>Green Knights | Workspace</title>
+    <meta name="description" content="Green tips for UCF student workspaces and study areas.">
+
 
 </head>
 
-<body style="margin:0px;">
-    <h1>Be a sustainable student</h1>
-    <br>
+<body>
+    <!-- NAV & LOGO -->
+    
+    <img id="logo" src="imgs/logo.png" alt="Green Knights Logo">
 
-    <div class="relative">
-        <img style="width:100%" src="workspace.png" alt="workspace background image">
+        <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
+        <div id="navDiv">
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="involved.html">Get Involved</a></li>
+                <li onclick="drop()"id="greenNav"style="font-weight:bold;">Explore Rooms</li>
+                <div id="dropdown">
+                    <div style="float:left;width:50%;text-align:right;padding-right:1vw;">
+                    <li><a id="greenNav" href="bathroom.html">Bathroom</a></li>
+                    <li><a id="greenNav" href="bedroom.html">Bedroom</a></li>
+                    <li><a id="greenNav" href="cleaning.html">Cleaning Supplies</a></li>
+                    </div>
+                    <div style="float:right;width:50%;text-align:left;padding-left:1vw;">
+                    <li><a id="greenNav" href="kitchen.html">Kitchen</a></li>
+                    <li><a id="greenNav" href="plants.html">Plants</a></li>
+                    <li><a id="greenNav" href="student.html">Workspace</a></li> 
+                    </div>
+                </div>
+                <li><a href="team.html">Meet the Team</a></li>
+            </ul>
+        </div>
+     
+    <!-- PAGE HEADING -->
+    <div class="centertxt">
+        <h1>Be a Sustainable Student</h1>
+    </div>
+
+    <div class="room">
+        <img style="width:100%" src="imgs/student/student.png" alt="student workspace background image">
 
         <div class="absolute1">
             <p class="bubble">1</p>
@@ -155,7 +77,7 @@ div.absolute5{
         </div>
     </div>
 
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modals">
         <div class="popup">
             <span class="close">&times;</span>
             <h1 id="heading"></h1>
@@ -165,9 +87,9 @@ div.absolute5{
 
     <!-- MOBILE DIVS -->
     <div class="mobilecontentleft">
-        <img class="mobileimg" src="#">
+        <img class="mobileimg" src="imgs/student/tablet.png">
         <div>
-            <h2>Electronic Notetaking</h2>
+            <h3>Electronic Notetaking</h3>
             <p>Ditch those notebooks and use your laptop or tablet to take all your notes. Saves space in your backpack, prevents
             clutter, and you can sync your notes across devices!</p>
         </div>
@@ -175,33 +97,33 @@ div.absolute5{
     
     <div class="mobilecontentright">
         <div>
-            <h2>Upcycled Supplies</h2>
+            <h3>Upcycled Supplies</h3>
             <p>Plastic pens? Shop for recycled ones, and make sure to recycle the plastic when you’re done.</p>
         </div>
-        <img class="mobileimg" src="#">
+        <img class="mobileimg" src="imgs/student/pens.png">
     </div>
     
     <div class="mobilecontentleft">
-        <img class="mobileimg" src="#">
+        <img class="mobileimg" src="imgs/student/bin.png">
         <div>
-            <h2>Recycle Old Supplies</h2>
+            <h3>Recycle Old Supplies</h3>
             <p>All your old binders full of paper and notebooks can be recycled, along with your plastic supplies.</p>
         </div>
     </div>
     
     <div class="mobilecontentright">
         <div>
-            <h2>Electronic Mail</h2>
+            <h3>Electronic Mail</h3>
             <p>Tired of getting tons of wasted paper junk in your mailbox? Save paper by opting out of junk mail letters and opt for
             e-staments from you service providers!</p>
         </div>
-        <img class="mobileimg" src="#">
+        <img class="mobileimg" src="imgs/student/email.png">
     </div>
     
     <div class="mobilecontentleft">
-        <img class="mobileimg" src="difuser.png">
+        <img class="mobileimg" src="imgs/student/outlet.png">
         <div>
-            <h2>Smart Power</h2>
+            <h3>Smart Power</h3>
             <p>Use a smart power strip for your electronic devices. They reduce your power usage, and therefore your carbon footprint,
             by shutting down devices that are in standby mode.</p>
         </div>
@@ -254,6 +176,32 @@ div.absolute5{
             modal.style.display = "none";
         }
     }
+
+</script>
+<script>
+    // NAV FUNCTIONS
+    function circleNav() {
+            var x = document.getElementById("navDiv");
+            if (x.style.display == "block") {
+                x.style.display = "none";
+                document.getElementById("menu").src = "imgs/hamburger.png";
+            } else {
+                x.style.display = "block";
+                document.getElementById("menu").src = "imgs/x.png";
+            }
+    }
+    function drop() {
+        // document.getElementById("dropdown").classList.toggle("show");
+
+        var dropmenu = document.getElementById("dropdown");
+        if (dropmenu.style.display == "block") {
+            dropmenu.style.display = "none";
+            } else {
+                dropmenu.style.display = "block";
+            }
+
+    }
+    // END NAV FUNCTIONS
 
 </script>
 

@@ -1,0 +1,71 @@
+/* NUMBER PLACEMENTS */
+p.bubble{
+    font-size: 25px;
+    border-radius:50%;
+    border: 2px solid #082b08;
+    background:white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+}
+p.bubble:hover{
+    background:#d1ea80;
+}
+.room{
+    position: relative;
+    width:100%;
+    margin: 0px;
+}
+.one {
+    position: absolute;
+    left: 20%;
+    top: 55%;
+    cursor: pointer;
+}
+
+.two {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    cursor: pointer;
+}
+.three {
+    position: absolute;
+    left: 62%;
+    top: 30%;
+    cursor: pointer;
+}
+.four {
+    position: absolute;
+    left:60%;
+    top: 45%;
+    cursor: pointer;
+}
+.five {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    cursor: pointer;
+}
+
+.six {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    cursor: pointer;
+}
+
+.seven {
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    cursor: pointer;
+}
+
+.eight {
+    position: absolute;
+    left: 5%;
+    top: 65%;
+    cursor: pointer;
+}
