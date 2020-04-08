@@ -7,12 +7,12 @@ body{
 h1{
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 4vh;
+    font-size: 6.5vh;
     color: #3E9228;
 }
 h2{
     font-family: 'Montserrat';
-    font-size: 3vh;
+    font-size: 4vh;
 }
 h3{
     font-family: 'Montserrat';
@@ -21,7 +21,7 @@ h3{
 }
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 2vh;
+    font-size: 2.8vh;
 }
 a{
     font-family: 'Roboto', sans-serif;
