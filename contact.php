@@ -1,0 +1,17 @@
+<?php
+    if(isset($_POST["submit"])){
+
+    $name = $_POST['name'];
+    $subject = $_POST['subject'];
+    $mailFrom = $_POST['email'];
+    $message = $_POST['message'];
+    $mailTo = 'joanna.e.folk@knights.ucf.edu';
+    $headers = "From: $mailFrom";
+    $txt = "You've recieved mail from ".$name.".\n\n".$message;
+
+    mail($mailTo, $subject, $txt, $headers);
+    header("Location: team.html");
+
+    }
+
+?>
