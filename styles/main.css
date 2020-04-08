@@ -2,15 +2,16 @@
 body{
     background-color: #fef7ea;
 }
+
 h1{
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 5vh;
+    font-size: 4vh;
     color: #3E9228;
 }
 h2{
     font-family: 'Montserrat';
-    font-size: 4vh;
+    font-size: 3vh;
 }
 h3{
     font-family: 'Montserrat';
@@ -21,38 +22,40 @@ p{
     font-family: 'Roboto', sans-serif;
     font-size: 2vh;
 }
+a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh; 
+    color: #bd4864; 
+}
 @media only screen and (max-width: 768px){
-    h1{
-        font-size: 4vh;
-    }
-    h2{
-        font-size: 3vh;
-    }
-    p{
-        font-size: 2vh;
-    }
+    h1{ font-size: 3vh; }
+    h2{ font-size: 2vh; }
+    h3{ font-size: 2vh; }
+    p{ font-size: 1.5vh; }
+    a{ font-size: 1.5vh; }
 }
 
 .centertxt{
     /* float:left; */
     width:100%;
     text-align:center;
-    padding-left:8vh;
-    padding-right:8vh;
+    /* padding-left:8vh;
+    padding-right:8vh; */
+    display: inline-block;
+}
+.left{
     display: inline-block;
 }
 
 /* LOGO */
 #logo{
-    width: 15%;
+    height: 10vh;
     float: left;
     margin-left: 2vh;
     margin-top: 2vh;
 }
 @media only screen and (max-width: 768px){
-    #logo{
-        width: 30%;
-    }
+    #logo{height: 8vh;}
 }
 
 /* NAVIGATION CSS */
@@ -77,15 +80,18 @@ p{
 }
 #navList{
     list-style: none;
-    font-size: 2vw;
     margin: 0;
-    padding-top: 60px;
+    padding-top: 25vh;
     z-index: 99;
+}
+@media only screen and (max-width: 768px){
+    #navList{padding-top: 15vh;}
 }
 #dropdown {
     position: relative;
     display: none;
 }
+
 ul li a{
     font-family: 'Montserrat';
     color: black;
@@ -95,12 +101,19 @@ ul li a{
     font-family: 'Montserrat';
     color: green;
     font-size: 3vh;
+    cursor: pointer;
+}
+#greenNav:hover{
+    color: #bd4864;
+}
+@media only screen and (max-width: 768px){
+    #greenNav{font-size: 2vh;}
+    ul li a{ font-size: 2vh;}
 }
 #topDiv{
     float:left;
     width:100%;
 }
-/* END NAV CSS */
 
 /* ROOM PAGES */
 p.bubble{
@@ -137,25 +150,26 @@ div.room{
 }
 .popup{
     position: absolute;
-    top: 25%;
-    left: 20%;
-    width: 50%;
-    padding: 5%;
+    top: 15%;
+    left: 15%;
+    width: 75%;
+    padding: 2%;
     background-color: white;
     border-radius: 25px;
 }
-.close{
+#close{
     color: #aaaaaa;
     float: right;
     font-weight: bold;
+    font-size: 5vw;
 }
-.close:hover, .close:focus{
+#close:hover, .close:focus{
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* mobile css */
+/* MOBILE CSS */
 .mobilecontentleft{
     display:none;
 }

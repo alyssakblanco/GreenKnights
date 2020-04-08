@@ -9,9 +9,9 @@ var two = document.getElementById("two");
 var three = document.getElementById("three");
 var four = document.getElementById("four");
 var five = document.getElementById("five");
-var five = document.getElementById("six");
-var five = document.getElementById("seven");
-var five = document.getElementById("eight");
+var six = document.getElementById("six");
+var seven = document.getElementById("seven");
+var eight = document.getElementById("eight");
 
 one.onclick = function(){
     modal.style.display = "block";

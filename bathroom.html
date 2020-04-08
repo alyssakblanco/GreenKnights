@@ -27,25 +27,22 @@
 
 <body>
     <!-- NAV & LOGO -->
-    <img id="logo" src="imgs/logo.png" alt="Green Knights Logo">
+    <a href="index.html"><img id="logo" src="imgs/logo.png" alt="Green Knights Logo"></a>
 
         <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
         <div id="navDiv">
+            <a href="index.html"><img id="logo" src="imgs/logo.png" alt="Green Knights Logo"></a>
             <ul id="navList">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="involved.html">Get Involved</a></li>
                 <li onclick="drop()"id="greenNav"style="font-weight:bold;">Explore Rooms</li>
                 <div id="dropdown">
-                    <div style="float:left;width:50%;text-align:right;padding-right:1vw;">
                     <li><a id="greenNav" href="bathroom.html">Bathroom</a></li>
                     <li><a id="greenNav" href="bedroom.html">Bedroom</a></li>
                     <li><a id="greenNav" href="cleaning.html">Cleaning Supplies</a></li>
-                    </div>
-                    <div style="float:right;width:50%;text-align:left;padding-left:1vw;">
                     <li><a id="greenNav" href="kitchen.html">Kitchen</a></li>
                     <li><a id="greenNav" href="plants.html">Plants</a></li>
                     <li><a id="greenNav" href="student.html">Workspace</a></li> 
-                    </div>
                 </div>
                 <li><a href="team.html">Meet the Team</a></li>
             </ul>
@@ -91,7 +88,7 @@
     <div id="myModal" class="modals">
         <div class="popup">
             <span id="close">&times;</span>
-            <h1 id="heading"></h1>
+            <h3 id="heading"></h3>
             <p id="description"></p>
             <a target="_blank" id="link"></a>
             <a target="_blank" id="link2"></a>

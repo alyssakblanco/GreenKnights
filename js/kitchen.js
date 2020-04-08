@@ -8,9 +8,9 @@ var two = document.getElementById("two");
 var three = document.getElementById("three");
 var four = document.getElementById("four");
 var five = document.getElementById("five");
-var five = document.getElementById("six");
-var five = document.getElementById("seven");
-var five = document.getElementById("eight");
+var six = document.getElementById("six");
+var seven = document.getElementById("seven");
+var eight = document.getElementById("eight");
 
 one.onclick = function() {
     modal.style.display = "block";
@@ -64,15 +64,16 @@ five.onclick = function() {
 
 six.onclick = function() {
     modal.style.display = "block";
+    heading.innerText = "Buy Bulk Whole Foods";
+    description.innerHTML = "Plastics by far are the worst at the grocery store. It seems now a days everything has plastic wrap. Want to cut down? Buy whole foods. Fruit, nuts, veggies, meat, flour, and spices can all be purchased in bulk minus the plastic. All you have to know is where to go. Its easy, Walmart, publix, and target have large produce sections with plastic free produce. Stores like Whole Foods and trader Joes have plastic free flours, spices, and nuts. Need some meat sans plastic? Check out your local butcher shop. <a href=\"https://www.localbutcherandmarket.com/\" target=\"_blank\">The Local Butcher</a> in Winter Park is my go to. Its a great place to pick up everything you could want for date night (and they have premarinated stuff if you want impress someone with your \"cooking skills\" or forgot a special occasion).";
+}
+
+seven.onclick = function() {
+    modal.style.display = "block";
     heading.innerText = "Help Save Spongebob and Our Reefs with Biodegradable Sponges";
     description.innerHTML = "Biodegradable sponges are an awesome way to help reduce plastic use and help save our reefs from depletion at the same time. While farmed sponges are a great alternative to plastic ones they often are bad for bacteria and cleaning purposes. Want other great green cleaning tips check out {CLEANING PAGE}. Biodegradable sponges will breakdown keeping our landfills plastic free and you can toss them into your countertops composter when you're done with them. Don't have one? Check out mine for more information on campus composting";
     link.setAttribute("href", "https://www.amazon.com/s?k=biodegradable+sponges&i=hpc&crid=Q3WS410CDC0W&sprefix=biodegradable++spon%2Chpc%2C145&ref=nb_sb_ss_i_1_18");
-    link.innerHTML = "Want to save money and go green with sponges? Buy in bulk";
-}
-seven.onclick = function() {
-    modal.style.display = "block";
-    heading.innerText = "Buy Bulk Whole Foods";
-    description.innerHTML = "Plastics by far are the worst at the grocery store. It seems now a days everything has plastic wrap. Want to cut down? Buy whole foods. Fruit, nuts, veggies, meat, flour, and spices can all be purchased in bulk minus the plastic. All you have to know is where to go. Its easy, Walmart, publix, and target have large produce sections with plastic free produce. Stores like Whole Foods and trader Joes have plastic free flours, spices, and nuts. Need some meat sans plastic? Check out your local butcher shop. <a href=\"https://www.localbutcherandmarket.com/\" target=\"_blank\">The Local Butcher</a> in Winter Park is my go to. Its a great place to pick up everything you could want for date night (and they have premarinated stuff if you want impress someone with your \"cooking skills\" or forgot a special occasion).";
+    link.innerHTML = "Want to save money and go green with sponges? Buy in bulk";  
 }
 
 eight.onclick = function() {
