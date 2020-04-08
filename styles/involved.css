@@ -22,7 +22,8 @@
     padding-left: 4%;
 }
 .clubpic{
-    width: 70%;
+    width: 20vw;
+    height: 20vw; 
     border-radius: 50%;
     margin: auto;
 }
