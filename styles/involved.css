@@ -20,6 +20,7 @@
     margin: auto;
 }
 
+
 @media only screen and (max-width: 768px) {
     .clubcontainer{
         display: grid;
@@ -40,6 +41,5 @@
     }
     .clubpic{
         width: 60%;
-        
     }
 }
