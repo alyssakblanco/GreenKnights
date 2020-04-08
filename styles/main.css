@@ -19,7 +19,7 @@ h3{
 }
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 3vh;
+    font-size: 2vh;
 }
 @media only screen and (max-width: 768px){
     h1{
@@ -164,21 +164,47 @@ div.room{
 }
 
 @media only screen and (max-width: 768px){
-    div.absolute1{
+    div#one{
         visibility:hidden;
     }
-    div.absolute2{
+    div#two{
         visibility:hidden;
     }
-    div.absolute3{
+    div#three{
         visibility:hidden;
     }
-    div.absolute4{
+    div#four{
         visibility:hidden;
     }
-    div.absolute5{
+    div#five{
         visibility:hidden;
     }
+    div#six{
+        visibility:hidden;
+    }
+    div#seven{
+        visibility:hidden;
+    }
+    div#eight{
+        visibility:hidden;
+    }
+
+    div#oneB{
+        visibility:hidden;
+    }
+    div#twoB{
+        visibility:hidden;
+    }
+    div#threeB{
+        visibility:hidden;
+    }
+    div#fourB{
+        visibility:hidden;
+    }
+    div#fiveB{
+        visibility:hidden;
+    } 
+    
     .mobilecontentleft{
         display: grid;
         grid-template-columns: 1fr 2fr;

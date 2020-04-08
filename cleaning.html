@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- google icon font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- local stylesheet -->
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link type="text/css" rel="stylesheet" href="styles/cleaning.css">
+    
+    <!--screen optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Green Knights | Cleaning Supplies</title>
+    <meta name="description" content="Green tips for UCF student's to clean green.">
+
+
+</head>
+
+<body>
+    <!-- NAV & LOGO -->
+    <img id="logo" src="imgs/logo.png" alt="Green Knights Logo">
+
+        <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
+        <div id="navDiv">
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="involved.html">Get Involved</a></li>
+                <li onclick="drop()"id="greenNav"style="font-weight:bold;">Explore Rooms</li>
+                <div id="dropdown">
+                    <div style="float:left;width:50%;text-align:right;padding-right:1vw;">
+                    <li><a id="greenNav" href="bathroom.html">Bathroom</a></li>
+                    <li><a id="greenNav" href="bedroom.html">Bedroom</a></li>
+                    <li><a id="greenNav" href="cleaning.html">Cleaning Supplies</a></li>
+                    </div>
+                    <div style="float:right;width:50%;text-align:left;padding-left:1vw;">
+                    <li><a id="greenNav" href="kitchen.html">Kitchen</a></li>
+                    <li><a id="greenNav" href="plants.html">Plants</a></li>
+                    <li><a id="greenNav" href="student.html">Workspace</a></li> 
+                    </div>
+                </div>
+                <li><a href="team.html">Meet the Team</a></li>
+            </ul>
+        </div>
+     
+    <!-- PAGE HEADING -->
+    <div class="centertxt">
+        <h1>Clean Can be Green</h1>
+    </div>
+
+    <!-- MAIN ROOM IMG -->
+    <div class="room">
+        <img style="width:100%" src="imgs/cleaning/cleaning.jpg" alt="supply closet background image">
+
+        <div id="one">
+            <p class="bubble">1</p>
+        </div>
+        <div id="two">
+            <p class="bubble">2</p>
+        </div>
+        <div id="three">
+            <p class="bubble">3</p>
+        </div>
+        <div id="four">
+            <p class="bubble">4</p>
+        </div>
+        <div id="five">
+            <p class="bubble">5</p>
+        </div>
+        <div id="six">
+            <p class="bubble">6</p>
+        </div>
+        <div id="seven">
+            <p class="bubble">7</p>
+        </div>
+        <div id="eight">
+            <p class="bubble">8</p>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modals">
+        <div class="popup">
+            <span id="close">&times;</span>
+            <h1 id="heading"></h1>
+            <p id="description"></p>
+        </div>
+    </div>
+
+    <!-- MOBILE DIVS -->
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/cleaning/reuse.png">
+        <div>
+            <h3>Using Resuable Towels</h3>
+            <p>Using reusbale towels to for cleaning allows people to be less wasteful when cleaning around their living situation. You can use them over and over again making them less wasteful than paper towels or even the less wasteful alternative reusable bamboo paper towels. You can get reusable clothes from any old preused piece of fabric in the house that you may have or you can even go out and buy one.</p>
+        </div>
+    </div>
+    
+    <div class="mobilecontentright">
+        <div>
+            <h3>No Need to Recycle When You Can Reuse</h3>
+            <p>Instead of going out and constantly buying bottles of the different cleaning supplies that the average household uses you can buy the product that you want in a bigger bulk supply and just refill reusable bottles that way you would be wasting less plastic plus if you start using alternatives to those cleaning supplies then you could fill the bottles with those.</p>
+        </div>
+        <img class="mobileimg" src="imgs/cleaning/dance.png">
+    </div>
+    
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/cleaning/eating.png">
+        <div>
+            <h3>Using Baking Soda</h3>
+            <p>Borax is useful but has to be used responsibly. You can use it to make homemade laundry detergent and it can be used to clean carpets. Do you think that you might be getting bugs such as roaches, water bugs and ants in your living arrangement? You can pour some borax and sugar where you think they may be entering to deter the pests. If you have any dirt, rust, or grime around the house you can use borax to clean and it will effectively remove the blemishes with a damp sponge or cloth.</p>
+        </div>
+    </div>
+    
+    <div class="mobilecontentright">
+        <div>
+            <h3>Smell Better and Green On! Borax</h3>
+            <p>If you have any spaces in the house that you think hold large amounts of bacteria then hydrogen peroxide is definitely going to be your bestfriend. Mixing hydrogen peroxide with water makes a solution strong enough to kill bacteria and give it a nice clean look.</p>
+        </div>
+        <img class="mobileimg" src="imgs/cleaning/smell.png">
+    </div>
+    
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/cleaning/blowup.png">
+        <div>
+            <h3>Hydrogen Peroxide Burns the Germs Too!</h3>
+            <p>If you have any spaces in the house that you think hold large amounts of bacteria then hydrogen peroxide is definitely going to be your bestfriend. Mixing hydrogen peroxide with water makes a solution strong enough to kill bacteria and give it a nice clean look.</p>
+        </div>
+    </div>
+
+    <div class="mobilecontentright">
+        <div>
+            <h3>Cleaning with White Vinegar</h3>
+            <p>White Vinegar can be used for many different cleaning purposes. It is an antifungal that kills germs and bacteria so it is great for mixing with water that you are using to mop floors. It also works very well for cleaning dirty multipurpose work rags in a washer.</p>
+            <p>Could be put in refillable bottles!</p>
+        </div>
+        <img class="mobileimg" src="imgs/cleaning/clean.png">
+    </div>
+
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/cleaning/win.png">
+        <div>
+            <h3>Lemon Juice for the Win</h3>
+            <p>Not only can lemon juice be used as a stain remover that can be used to breakdown grease but it is also a nice smelling nontoxic bleach. Instead of buying bleach this is a great alternative.</p>
+            <p>Could be put in refillable bottles!</p>
+        </div>
+    </div>
+
+    <div class="mobilecontentright">
+        <div>
+            <h3>It's a Cleaning Party!</h3>
+            <p>It can be used to breakdown and remove stains from clothing while also having the potential of being used as a polisher! </p>
+            <p>Could be put in refillable bottles!</p>
+        </div>
+        <img class="mobileimg" src="imgs/cleaning/excited.png">
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+<script src="js/cleaning.js"></script>
+
+</body>
+
+</html>

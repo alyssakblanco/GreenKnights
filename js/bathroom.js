@@ -1,8 +1,7 @@
-var modal = document.getElementById("infoModal");
+var modal = document.getElementById("myModal");
 var heading = document.getElementById("heading");
 var description = document.getElementById("description");
-var closebtn = document.getElementsByClassName("closebtn")[0];
-var link = document.getElementById("link");
+var close = document.getElementById("close");
 
 var one = document.getElementById("one");
 var two = document.getElementById("two");
@@ -17,8 +16,10 @@ one.onclick = function() {
     modal.style.display = "block";
     heading.innerText = "Bathroom Essentials";
     description.innerText = "Plastic bathroom products end up in a landfill indefinitely, or in our oceans. Swap out items like hairbrushes, combs, q-tips, and toilet scrubbers for ones made out of wood.";
-    link.setAttribute("href", "#");
-    link.innerHTML="";   
+    link.setAttribute("href", "https://crazylittleprojects.com/easy-tote-bag-tutorial/");
+    link.innerHTML="DIY TOTE-ally Cool Totes";
+    link.setAttribute("href", "https://www.amazon.com/UNIVERSITY-CENTRAL-FLORIDA-FABRIC-100-YARD-GEOMETRIC/dp/B0763T24RL");
+    link.innerHTML="Charge On with UCF fabric";
 }
 
 two.onclick = function() {
@@ -76,12 +77,33 @@ eight.onclick = function() {
     link.innerHTML="Buy here!";
 }
 
-closebtn.onclick = function() {
-    modal.style.display = "none";
+// MODAL FUNCTIONS
+close.onclick = function(){
+    modal.style.display= "none";
 }
-
-window.onclick = function() {
-    if(event.target == modal) {
+window.onclick = function (event) {
+    if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+// NAV FUNCTIONS
+function circleNav() {
+    var x = document.getElementById("navDiv");
+    if (x.style.display == "block") {
+        x.style.display = "none";
+        document.getElementById("menu").src = "imgs/hamburger.png";
+    } else {
+        x.style.display = "block";
+        document.getElementById("menu").src = "imgs/x.png";
+    }
+}
+function drop() {
+    var dropmenu = document.getElementById("dropdown");
+    if (dropmenu.style.display == "block") {
+        dropmenu.style.display = "none";
+        } else {
+            dropmenu.style.display = "block";
+        }
+
 }

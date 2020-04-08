@@ -1,119 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
 
-        <!-- google icon font -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--materialize.css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!-- materialize JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<head>
+    <meta charset="utf-8">
 
-        <!-- local stylesheet -->
-        <link type="text/css" rel="stylesheet" href="styles/main.css">
-        <link type="text/css" rel="stylesheet" href="styles/bathroom.css">
-        
-        <!--screen optimization-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google icon font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-        <!-- SEO -->
-        <title>Green Knights | Bathroom</title>
-        <meta name="description" content="Green Tips for UCF student living bathrooms.">
-    </head>
-
-    <body>
-        <!-- NAV AND LOGO -->
-        <div id="topDiv">
-            <img id="logo" src="imgs/logo.png" alt="Green Knights Logo">
-
-            <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
-            <div id="navDiv">
-                <ul id="navList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="involved.html">Get Involved</a></li>
-                    
-                    <li onclick="drop()"id="greenNav"style="font-weight:bold;">Explore Rooms</li>
-                    <div id="dropdown">
-                        <div style="float:left;width:50%;text-align:right;padding-right:1vw;">
-                        <li><a id="greenNav" href="bathroom.html">Bathroom</a></li>
-                        <li><a id="greenNav" href="bedroom.html">Bedroom</a></li>
-                        <li><a id="greenNav" href="cleaning.html">Cleaning Supplies</a></li>
-                        </div>
-                        <div style="float:right;width:50%;text-align:left;padding-left:1vw;">
-                        <li><a id="greenNav" href="kitchen.html">Kitchen</a></li>
-                        <li><a id="greenNav" href="plants.html">Plants</a></li>
-                        <li><a id="greenNav" href="student.html">Workspace</a></li> 
-                        </div>
-                    </div>
-                    <li><a href="team.html">Meet the Team</a></li>
-                </ul>
-            </div>
-        </div>
-         
-        <!-- HOME PAGE HEADING -->
-        <div class="centertxt">
-            <h1>Turn You Hygiene Into Hy-Green</h1>
-        </div>
-
-        <!-- MAIN ROOM SECTION -->
-        <div style="float:left;"class="room">
-            <img style="width:100%;" src="imgs/bathroom/bathroom.png"/>  
-            
-            <div class="one">
-                <p class="bubble">1</p>
-            </div>
-            <div class="two">
-                <p class="bubble">2</p>
-            </div>
-            <div class="three">
-                <p class="bubble">3</p>
-            </div>
-            <div class="four">
-                <p class="bubble">4</p>
-            </div>
-            <div class="five">
-                <p class="bubble">5</p>
-            </div>
-            <div class="six">
-                <p class="bubble">6</p>
-            </div>
-            <div class="seven">
-                <p class="bubble">7</p>
-            </div>
-            <div class="eight">
-                <p class="bubble">8</p>
-            </div>
-
-        </div>
-
-        
-        <script src="bathroom.js"></script>
-        <script>
-            // NAV FUNCTIONS
-            function circleNav() {
-                    var x = document.getElementById("navDiv");
-                    if (x.style.display == "block") {
-                        x.style.display = "none";
-                        document.getElementById("menu").src = "imgs/hamburger.png";
-                    } else {
-                        x.style.display = "block";
-                        document.getElementById("menu").src = "imgs/x.png";
-                    }
-            }
-            function drop() {
-                // document.getElementById("dropdown").classList.toggle("show");
-
-                var dropmenu = document.getElementById("dropdown");
-                if (dropmenu.style.display == "block") {
-                    dropmenu.style.display = "none";
-                    } else {
-                        dropmenu.style.display = "block";
-                    }
-
-            }
-            // END NAV FUNCTIONS
+    <!-- local stylesheet -->
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link type="text/css" rel="stylesheet" href="styles/bathroom.css">
     
-        </script>
-    </body>
+    <!--screen optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Green Knights | Bathroom</title>
+    <meta name="description" content="Green tips for UCF student's bathroom">
+
+
+</head>
+
+<body>
+    <!-- NAV & LOGO -->
+    <img id="logo" src="imgs/logo.png" alt="Green Knights Logo">
+
+        <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
+        <div id="navDiv">
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="involved.html">Get Involved</a></li>
+                <li onclick="drop()"id="greenNav"style="font-weight:bold;">Explore Rooms</li>
+                <div id="dropdown">
+                    <div style="float:left;width:50%;text-align:right;padding-right:1vw;">
+                    <li><a id="greenNav" href="bathroom.html">Bathroom</a></li>
+                    <li><a id="greenNav" href="bedroom.html">Bedroom</a></li>
+                    <li><a id="greenNav" href="cleaning.html">Cleaning Supplies</a></li>
+                    </div>
+                    <div style="float:right;width:50%;text-align:left;padding-left:1vw;">
+                    <li><a id="greenNav" href="kitchen.html">Kitchen</a></li>
+                    <li><a id="greenNav" href="plants.html">Plants</a></li>
+                    <li><a id="greenNav" href="student.html">Workspace</a></li> 
+                    </div>
+                </div>
+                <li><a href="team.html">Meet the Team</a></li>
+            </ul>
+        </div>
+     
+    <!-- PAGE HEADING -->
+    <div class="centertxt">
+        <h1>Turn Your Hygiene into Hy-Green</h1>
+    </div>
+
+
+    <!-- MAIN ROOM IMG -->
+    <div class="room">
+        <img style="width:100%" src="imgs/bathroom/bathroom.png" alt="bathroom background image">
+
+        <div id="one">
+            <p class="bubble">1</p>
+        </div>
+        <div id="two">
+            <p class="bubble">2</p>
+        </div>
+        <div id="three">
+            <p class="bubble">3</p>
+        </div>
+        <div id="four">
+            <p class="bubble">4</p>
+        </div>
+        <div id="five">
+            <p class="bubble">5</p>
+        </div>
+        <div id="six">
+            <p class="bubble">6</p>
+        </div>
+        <div id="seven">
+            <p class="bubble">7</p>
+        </div>
+        <div id="eight">
+            <p class="bubble">8</p>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modals">
+        <div class="popup">
+            <span id="close">&times;</span>
+            <h1 id="heading"></h1>
+            <p id="description"></p>
+            <a target="_blank" id="link"></a>
+            <a target="_blank" id="link2"></a>
+        </div>
+    </div>
+
+    <!-- MOBILE DIVS -->
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/bathroom/toothbrush.png">
+        <div>
+            <h3>Bathroom Essentials</h3>
+            <p>Plastic bathroom products end up in a landfill indefinitely, or in our oceans. Swap out the following items for ones made of natural materials, like wood or cotton.</p>
+        </div>
+    </div>
+    
+    <div class="mobilecontentright">
+        <div>
+            <h3>Mix your own toothpaste, mouthwash, and deodorant.</h3>
+            <p>Normally these products come in plastic containers that are non-recyclable.
+                <a target="_blank" href="https://www.thezerowastecollective.com/post/zero-waste-bathroom-diy-toothpaste-mouthwash-deodorant">Click here to learn how!</a>
+            </p>
+        </div>
+        <img class="mobileimg" src="imgs/bathroom/mouthwash.png">
+    </div>
+    
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/bathroom/shampoo.png">
+        <div>
+            <h3>Try using a shampoo bar instead of shampoo from a plastic bottle.</h3>
+            <p><a target="_blank" href="https://www.sustainablejungle.com/best-of-sustainable-beauty/zero-waste-shampoo-conditioner/">Zero waste shampoo and conditioners!</a></p>
+        </div>
+    </div>
+    
+    <div class="mobilecontentright">
+        <div>
+            <h3>Replace plastic soap bottles with bar soap that comes in non-plastic packaging!</h3>
+        </div>
+        <img class="mobileimg" src="imgs/bathroom/soap2.png">
+    </div>
+    
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/bathroom/razor.png">
+        <div>
+            <h3>Swap disposable razors for a safety razor!</h3>
+            <p>Safety razors are made of stainless steel. The blades can be recycled at the end of their life, and the razor itself can last years!
+            <a target="_blank" href="https://www.greenmatters.com/p/zero-waste-razors-shaving-guide">Safety Razor guide</a></p>
+        </div>
+    </div>
+
+    <div class="mobilecontentright">
+        <div>
+            <h3>Use 100% recycled toilet paper!</h3>
+            <p><a target="_blank" href="https://www.seventhgeneration.com/bathroom-tissue-2-ply">Seventh Generation 100% recycled toilet paper</a></p>
+        </div>
+        <img class="mobileimg" src="imgs/bathroom/toiletpaper.png">
+    </div>
+
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/bathroom/makeup.png">
+        <div>
+            <h3>Make your own makeup remover!</h3>
+            <p>Cotton can be composted, but cotton pads/ball are often in plastic packaging.
+            <a target="_blank" href="https://www.amazon.com/Remover-3-15inch-Reusable-Washable-Cleansing/dp/B07J55LS28/ref=sr_1_3?crid=1PSI6U8AGKMO0&keywords=reusable+facial+rounds&qid=1585590408&sprefix=reusable+facial%2Caps%2C181&sr=8-3">
+                Buy here!</a></p>
+        </div>
+    </div>
+
+    <div class="mobilecontentright">
+        <div>
+            <h3>You can use reusable facial rounds instead of single-use cotton pads/balls</h3>
+            <p>Cotton can be composted, but cotton pads/ball are often in plastic packaging.<a target="_blank" href="https://www.amazon.com/Remover-3-15inch-Reusable-Washable-Cleansing/dp/B07J55LS28/ref=sr_1_3?crid=1PSI6U8AGKMO0&keywords=reusable+facial+rounds&qid=1585590408&sprefix=reusable+facial%2Caps%2C181&sr=8-3">
+                Buy here!</a></p>
+        </div>
+        <img class="mobileimg" src="imgs/bathroom/pads.png">
+    </div>
+
+    <!-- END PAGE CONTENT -->
+   
+<script src="js/bathroom.js"></script>
+
+</body>
+
 </html>

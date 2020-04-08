@@ -1,170 +1,149 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-
     <meta charset="utf-8">
+
     <!-- google icon font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <!-- local stylesheet -->
-    <link type="text/css" rel="stylesheet" href="stylesheet.css">
-    <!--mobile optimization-->
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link type="text/css" rel="stylesheet" href="styles/team.css">
+    
+    <!--screen optimization-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Green Knights</title>
-    <meta name="description"
-        content="Promoting UCF students to become active citizens by advocating for sustainable student living. Join the green revolution!">
+    <!-- SEO -->
+    <title>Green Knights | Team</title>
+    <meta name="description" content="Meet Group 5 from Dan's Web Design Workshop class.">
+
 
 </head>
 
 <body>
+    <!-- NAV & LOGO -->
+    <img id="logo" src="imgs/logo.png" alt="Green Knights Logo">
 
-    <img style="float:left;" src="https://via.placeholder.com/250x100" alt="Green Knights Logo">
-
-    <!-- NAV BUTTON -->
-    <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu"
-            style="width:100%;" src="imgs/hamburger.png"></button>
-    <div id="navDiv">
-        <ul id="navList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="involved.html">Get Involved</a></li>
-            <li><a href="team.html">Team</a></li>
-        </ul>
+        <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
+        <div id="navDiv">
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="involved.html">Get Involved</a></li>
+                <li onclick="drop()"id="greenNav"style="font-weight:bold;">Explore Rooms</li>
+                <div id="dropdown">
+                    <div style="float:left;width:50%;text-align:right;padding-right:1vw;">
+                    <li><a id="greenNav" href="bathroom.html">Bathroom</a></li>
+                    <li><a id="greenNav" href="bedroom.html">Bedroom</a></li>
+                    <li><a id="greenNav" href="cleaning.html">Cleaning Supplies</a></li>
+                    </div>
+                    <div style="float:right;width:50%;text-align:left;padding-left:1vw;">
+                    <li><a id="greenNav" href="kitchen.html">Kitchen</a></li>
+                    <li><a id="greenNav" href="plants.html">Plants</a></li>
+                    <li><a id="greenNav" href="student.html">Workspace</a></li> 
+                    </div>
+                </div>
+                <li><a href="team.html">Meet the Team</a></li>
+            </ul>
+        </div>
+     
+    <!-- PAGE HEADING -->
+    <div class="centertxt">
+        <h1>Meet the Team</h1>
     </div>
 
-    <div class="under container center">
-        <h1>Our Mission</h1>
-        <p>Our mission is to educate and support students in taking action to practice more environmentally sustainable habits.</p>
-    </div>
-
-    <!-- TEAM -->
+    <!-- MAIN TEAM CONTENT -->
     <div class="container row">
-        <h2>Meet the Team</h2><div class="divider"></div><br>
-        <div class="col s6">
-            <img src="https://via.placeholder.com/150x150" alt="member image" style="border-radius:50%;">
+        <div class="divider"></div>
+        <p class="centertxt">Our mission is to educate and support students in taking action to practice more environmentally sustainable habits in their day-to-day routines.</p><div class="divider"></div><br>
+        <div class="col l4 s8">
+            <img class="profilePic" src="imgs/team/jo.png" alt="member image">
             <h3>Joanna (Jo) Folk</h3>
-            <p>About info here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p><span style="color:#3e9228">Green Tip: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua.</p>
+            <p>Joanna is a senior in the UCF Web and Social Platforms program. Her focus is  back-end web development. Joanna is an active member of the US Coast Guard where she serves as a pollution responder. She plans on working as a freelance developer after graduation.</p>
+            <p><span style="color:#3e9228">Green Tip: </span>Ditch those specialized cleaning products for white vinegar. It can be used as an extremely versatile cleaner for glass, floors, and surfaces. Buy it in bulk to cut back on packaging.</p>
         </div>
-        <div class="col s6">
-            <img src="https://via.placeholder.com/150x150" alt="member image" style="border-radius:50%;">
+        <div class="col l4 s8">
+            <img class="profilePic" src="imgs/team/alyssa.png" alt="member image">
             <h3>Alyssa Blanco</h3>
-            <p>About info here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-            <p><span style="color:#3e9228">Green Tip: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.</p>
+            <p>Alyssa is a senior student at UCF and is graduating in May 2020 with a BA in Digital Media. She is currently an intern at Visit Orlando and plans on becoming a software developer after graduation.</p>
+            <p><span style="color:#3e9228">Green Tip: </span>Reusable straws are the best! Mine is attached to my keychain and is easy to clean. Did you know 500 million plastic straws are used everyday?</p>
         </div>
-    </div>
-    <div class="container row">
-        <div class="col s6">
-            <img src="https://via.placeholder.com/150x150" alt="member image" style="border-radius:50%;">
+   
+        <div class="col l4 s8">
+            <img class="profilePic" src="imgs/team/james.png" alt="member image">
             <h3>James Clement</h3>
-            <p>About info here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-            <p><span style="color:#3e9228">Green Tip: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.</p>
-        </div>
-        <div class="col s6">
-            <img src="https://via.placeholder.com/150x150" alt="member image" style="border-radius:50%;">
-            <h3>Inga Moiseienko</h3>
-            <p>About info here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-            <p><span style="color:#3e9228">Green Tip: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.</p>
+            <p>James is a senior at UCF working towards a degree in Digital Media Web Design. I have grown up here in Central Florida and I am passionate about helping the community. I currently work as a Valet Supervisor at the Gaylord Palms but after I graduate I plan on being a freelancing web designer.</p>
+            <p><span style="color:#3e9228">Green Tip: </span>Buying a reusable water bottle is an extremely effective way to cut down on your plastic use and they can look cool also!</p>
         </div>
     </div>
     <div class="container row">
-        <div class="col s6">
-            <img src="https://via.placeholder.com/150x150" alt="member image" style="border-radius:50%;">
-            <h3>Steven Pearce</h3>
-            <p>About info here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-            <p><span style="color:#3e9228">Green Tip: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.</p>
+        <div class="col l4 s8">
+            <img class="profilePic" src="imgs/team/inga.png" alt="member image">
+            <h3>Inga Moiseienko</h3>
+            <p>Inga is passionate about designing realistic 3D environments and visual pleasing websites. She is presently a senior at the University of Central Florida, majoring in Experimental Animation plus Web and Social Platforms. Upon graduation, she wants to work in the simulation industry while still applying her full-stack development skills.</p>
+            <p><span style="color:#3e9228">Green Tip: </span>Baking soda can be used as a friendly substitution for household cleaning chemicals. It is harmless and odorless. Sinks and bathtubs can be easily cleaned with it. </p>
         </div>
-        <div class="col s6">
-            <img src="https://via.placeholder.com/150x150" alt="member image" style="border-radius:50%;">
+        <div class="col l4 s8">
+            <img class="profilePic" src="imgs/team/brianna.png" alt="member image">
             <h3>Briana Walker</h3>
-            <p>About info here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-            <p><span style="color:#3e9228">Green Tip: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.</p>
+            <p>Briana is a senior in the UCF Web and Social Platforms program. Her focus is in front-end design. After graduating she plans to find a job in front-end design and/or web development, where she can use her skills to create great websites and apps.</p>
+            <p><span style="color:#3e9228">Green Tip: </span>Use thrift stores! You can get rid of your unwanted belongings for other people to use, as well as find your own secondhand stuff.</p>
         </div>
+        <div class="col l4 s8">
+            <img class="profilePic steven" src="imgs/team/steven.png" alt="member image">
+            <h3>Steven Pearce</h3>
+            <p>Hi all I am a senior web designer at UCF. I focus on Ui/Ux and expanding accessibility of sites. My favorite place is the kitchen. I have been cooking since I was 10 years old and have many green tips to bring your cooking skills to new heights while also helping save our environment.
+            </p>
+            <p><span style="color:#3e9228">Green Tip: </span>buying items that come in glass containers instead of plastic is a great way to use reusable resources, help recycle materials that can be 100% remade into other items, and makes nifty holding containers for food and ingredients after you're done with them</p>
+        </div> 
     </div>
 
-    <!-- INSTAGRAM FEED //will be api in future, hard code for now-->
-    <div class="container row">
-        <h2>Follow Us</h2><div class="divider"></div><br>
-        <div class="col s4">
-            <img src="https://via.placeholder.com/150x150">
-        </div>
-        <div class="col s4">
-            <img src="https://via.placeholder.com/150x150">
-        </div>
-        <div class="col s4">
-            <img src="https://via.placeholder.com/150x150">
-        </div>        
-    </div>
+    <div class="divider"></div>
+    <div class='sk-instagram-feed' data-embed-id='37376'></div><script src='https://www.sociablekit.com/app/embed/instagram-feed/widget.js' async defer></script>
 
     <!-- CONTACT FORM -->
     <div class="container">
         <h2>Contact Us</h2>
         <p>Have a question or a favorite green tip you want to share with your fellow Knights? Let us know!</p>
-        <div class="row ">
+        <div class="row half">
             <div class="input-field">
                 <input type="text">
                 <label>Name</label>
             </div>
         </div>
-        <div class="row ">
+        <div class="row half">
             <div class="input-field">
                 <input id="email" type="email" class="validate">
                 <label for="email">Email</label>
             </div>
         </div>
-        <div class="row ">
+        <div class="row half">
             <div class="input-field">
                 <input type="text">
                 <label>Subject</label>
             </div>
         </div>
-        <div class="row ">
+        <div class="row half">
             <div class="input-field">
                 <textarea id="textarea1" class="materialize-textarea"></textarea>
                 <label for="textarea1">Message</label>
             </div>
         </div>
-        <div class="row  center">
+        <div class="row half center">
             <button class="btn waves-effect waves-light" type="submit" name="action">Send
             <i class="material-icons right">send</i>
             </button>
         </div>
     </div>
 
-<!-- BEGIN LOCAL SCRIPTS -->
+    <img style="width:100%;" src="imgs/team/banner.png" alt="the gangs all here">
+    
 <script>
-    // menu functionality
+    // NAV FUNCTIONS
     function circleNav() {
         var x = document.getElementById("navDiv");
         if (x.style.display == "block") {
@@ -175,7 +154,15 @@
             document.getElementById("menu").src = "imgs/x.png";
         }
     }
+    function drop() {
+        var dropmenu = document.getElementById("dropdown");
+        if (dropmenu.style.display == "block") {
+            dropmenu.style.display = "none";
+            } else {
+                dropmenu.style.display = "block";
+            }
 
+    }
 </script>
 </body>
 

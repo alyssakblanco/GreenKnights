@@ -1,53 +1,52 @@
-
 div#one {
     position: absolute;
-    left: 20%;
-    top: 55%;
+    top: 8%;
+    left: 22.6%;
     cursor: pointer;
 }
 
 div#two {
     position: absolute;
-    left: 40%;
-    top: 30%;
+    top: 22%;
+    left: 13%;
     cursor: pointer;
 }
 div#three {
     position: absolute;
-    left: 62%;
-    top: 30%;
+    top: 40%;
+    left: 13%;
     cursor: pointer;
 }
 div#four {
     position: absolute;
-    left:60%;
-    top: 45%;
+    top: 40%;
+    left: 22%;
     cursor: pointer;
 }
 div#five {
     position: absolute;
-    left: 40%;
-    top: 15%;
+    top: 40%;
+    left: 29%;
     cursor: pointer;
 }
 
 div#six {
     position: absolute;
-    left: 40%;
-    top: 50%;
+    top: 64%;
+    left: 13%;
     cursor: pointer;
 }
 
 div#seven {
     position: absolute;
-    left: 5%;
-    top: 40%;
+    top: 67%;
+    left: 22%;
     cursor: pointer;
 }
 
 div#eight {
     position: absolute;
-    left: 5%;
-    top: 65%;
+    top: 64.75%;
+    left: 29%;
     cursor: pointer;
 }

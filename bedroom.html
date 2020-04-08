@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- google icon font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- local stylesheet -->
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link type="text/css" rel="stylesheet" href="styles/bedroom.css">
+    
+    <!--screen optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Green Knights | Bedroom</title>
+    <meta name="description" content="Green tips for UCF student's bedrooms'.">
+
+
+</head>
+
+<body>
+    <!-- NAV & LOGO -->
+    <img id="logo" src="imgs/logo.png" alt="Green Knights Logo">
+
+        <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
+        <div id="navDiv">
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="involved.html">Get Involved</a></li>
+                <li onclick="drop()"id="greenNav"style="font-weight:bold;">Explore Rooms</li>
+                <div id="dropdown">
+                    <div style="float:left;width:50%;text-align:right;padding-right:1vw;">
+                    <li><a id="greenNav" href="bathroom.html">Bathroom</a></li>
+                    <li><a id="greenNav" href="bedroom.html">Bedroom</a></li>
+                    <li><a id="greenNav" href="cleaning.html">Cleaning Supplies</a></li>
+                    </div>
+                    <div style="float:right;width:50%;text-align:left;padding-left:1vw;">
+                    <li><a id="greenNav" href="kitchen.html">Kitchen</a></li>
+                    <li><a id="greenNav" href="plants.html">Plants</a></li>
+                    <li><a id="greenNav" href="student.html">Workspace</a></li> 
+                    </div>
+                </div>
+                <li><a href="team.html">Meet the Team</a></li>
+            </ul>
+        </div>
+     
+    <!-- PAGE HEADING -->
+    <div class="centertxt">
+        <h1>Get Your Room Into the Green Scene</h1>
+    </div>
+
+    <!-- MAIN ROOM IMG -->
+    <div class="room">
+        <img style="width:100%" src="imgs/bedroom/bedroom.png" alt="bedroom background image">
+
+        <div id="one">
+            <p class="bubble">1</p>
+        </div>
+        <div id="two">
+            <p class="bubble">2</p>
+        </div>
+        <div id="three">
+            <p class="bubble">3</p>
+        </div>
+        <div id="four">
+            <p class="bubble">4</p>
+        </div>
+        <div id="five">
+            <p class="bubble">5</p>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modals">
+        <div class="popup">
+            <span id="close">&times;</span>
+            <h1 id="heading"></h1>
+            <p id="description"></p>
+        </div>
+    </div>
+
+    <!-- MOBILE DIVS -->
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/bedroom/light.png">
+        <div>
+            <h3>Can we get a watt watt?</h3>
+            <p>Switching to LEDs is way more energy efficient, and LEDs don’t contain mercury like CFLs. 
+                Go natural and take advantage of natural light when needed.
+            </p>
+        </div>
+    </div>
+    
+    <div class="mobilecontentright">
+        <div>
+            <h3>Green curtains for certian!</h3>
+            <p>Get crafty and make your own blinds from recycled textiles (like a flat sheet: Link to DIY). 
+            Save energy and keep those Florida cooling bills down by keeping them closed during the day.
+            </p>
+        </div>
+        <img class="mobileimg" src="imgs/bedroom/curtains.png">
+    </div>
+    
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/bedroom/dresser.png">
+        <div>
+            <h3>Shop Used Furniture</h3>
+            <p>Second hand furniture is easy to come by! Shop your local thrift, or online listings 
+                for lightly used furniture, or buy vintage pieces and give them a makeover.
+            </p>
+        </div>
+    </div>
+    
+    <div class="mobilecontentright">
+        <div>
+            <h3>Eco-friendly Bedding</h3>
+            <p>Second hand furniture is easy to come by! Shop your local thrift, or online listings 
+                for lightly used furniture, or buy vintage pieces and give them a makeover.
+            </p>
+        </div>
+        <img class="mobileimg" src="imgs/bedroom/pillow.png">
+    </div>
+    
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/bedroom/diffuser.png">
+        <div>
+            <h3>Opt for Essesntials</h3>
+            <p>Say no to aerosol sprays and opt for natural scents like essential oils, 
+                or open up the windows for some good old fashioned fresh air.</p>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+<script src="js/bedroom.js"></script>
+
+</body>
+
+</html>

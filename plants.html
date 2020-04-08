@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- google icon font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- local stylesheet -->
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link type="text/css" rel="stylesheet" href="styles/plants.css">
+    
+    <!--screen optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Green Knights | Plants</title>
+    <meta name="description" content="Easy to care for plants that will thrive in any UCF dorm.">
+
+
+</head>
+
+<body>
+    <!-- NAV & LOGO -->
+    <img id="logo" src="imgs/logo.png" alt="Green Knights Logo">
+
+        <button class="btn-floating btn-large waves-effect waves-light" id="navButton" onclick="circleNav()"><img id="menu" style="width:100%;" src="imgs/hamburger.png"></button>
+        <div id="navDiv">
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="involved.html">Get Involved</a></li>
+                <li onclick="drop()"id="greenNav"style="font-weight:bold;">Explore Rooms</li>
+                <div id="dropdown">
+                    <div style="float:left;width:50%;text-align:right;padding-right:1vw;">
+                    <li><a id="greenNav" href="bathroom.html">Bathroom</a></li>
+                    <li><a id="greenNav" href="bedroom.html">Bedroom</a></li>
+                    <li><a id="greenNav" href="cleaning.html">Cleaning Supplies</a></li>
+                    </div>
+                    <div style="float:right;width:50%;text-align:left;padding-left:1vw;">
+                    <li><a id="greenNav" href="kitchen.html">Kitchen</a></li>
+                    <li><a id="greenNav" href="plants.html">Plants</a></li>
+                    <li><a id="greenNav" href="student.html">Workspace</a></li> 
+                    </div>
+                </div>
+                <li><a href="team.html">Meet the Team</a></li>
+            </ul>
+        </div>
+     
+    <!-- PAGE HEADING -->
+    <div class="centertxt">
+        <h1>Root for Sustainability</h1>
+    </div>
+
+    <!-- MAIN ROOM IMG -->
+    <div class="room">
+        <img id="bkgrdPic" style="width:100%" src="imgs/plants/plants1.png" alt="plants background image">
+        <!-- plants 1 -->
+        <div id="one">
+            <p class="bubble">1</p>
+        </div>
+        <div id="two">
+            <p class="bubble">2</p>
+        </div>
+        <div id="three">
+            <p class="bubble">3</p>
+        </div>
+        <div id="four">
+            <p class="bubble">4</p>
+        </div>
+        <div id="five">
+            <p class="bubble">5</p>
+        </div>
+
+        <!-- plants 2 -->
+        <div id="oneB">
+            <p class="bubble">1</p>
+        </div>
+        <div id="twoB">
+            <p class="bubble">2</p>
+        </div>
+        <div id="threeB">
+            <p class="bubble">3</p>
+        </div>
+        <div id="fourB">
+            <p class="bubble">4</p>
+        </div>
+        <div id="fiveB">
+            <p class="bubble">5</p>
+        </div>
+
+        <button id="switch">More</button>
+    </div>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modals">
+        <div class="popup">
+            <span id="close">&times;</span>
+            <h1 id="heading"></h1>
+            <p id="description"></p>
+            <h3 id="care"></h3>
+            <p id="instructions"></p>
+        </div>
+    </div>
+
+    <!-- MOBILE DIVS -->
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/plants/ponytail_palm.png">
+        <div>
+            <h3>Ponytail Palm</h3>
+            <p>The plant will absorb carbon dioxide and release oxygen which will help maintain healthy environment inyour room.
+            </p>
+            <h4>Ponytail Care:</h4>
+            <p>It will need bright place in your room. The palm has to be watered once in 7-10 days when the soils looks dry.</p>
+        </div>
+    </div>
+   
+    <div class="mobilecontentright">
+        <div>
+            <h3>Peace Lily</h3>
+            <p>Peace lily is well known houseplant with dark green leaves and white blooms. The low maintain plant will not only will enhance your décor but also it will work hard to purify and clean air in your room. Research by the American Horticultural Therapy Association found a plant in your room such as this lily can increase your memory.
+            </p>
+            <h4>Peace Lily Care</h4>
+            <p>The more sunshine the lily will get, the more it will blooms. The soil has to be evenly moist. Place your plant in medium to bright spot.</p>
+        </div>
+        <img class="mobileimg" src="imgs/plants/peace_lilly.png">
+    </div>
+
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/plants/cacti_succulent.png">
+        <div>
+            <h3>Cacti and Succulents</h3>
+            <p>The dryland plants are easy to take care for, and they come in different colors, shapes, and textures. The plants are perfect picks for students since they don’t have high water needs. A studycompleted by the Royal College of Agriculture in England discovered that having plants in schools help students to be more attentive by 70 percent. You can have one on your desk to help you stay focused.
+            </p>
+            <h4>Cacti and Succulent Care</h4>
+            <p>Cacti and succulents like bright sunlight. The best place is a window where they can receive maximum light. Let the soil to dry completely before each watering.</p>
+        </div>
+    </div>
+
+    <div class="mobilecontentright">
+        <div>
+            <h3>Lucky Bamboo</h3>
+            <p>Keep a bamboo where you study. Studies by the American Horticultural Therapy Association revealed that students who have plants such as lucky bamboo in their rooms can focus better than those without.
+            </p>
+            <h4>Bamboo Care:</h4>
+            <p>Grow it in medium to low light. The leaves can get sunborns if it will be under direct sunlight. The soil needs to be moistured, so grow a bamboo in water-filled pot or water it frequently.</p>
+        </div>
+        <img class="mobileimg" src="imgs/plants/lucky_bamboo.png">
+    </div>
+   
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/plants/sago_palm.png">
+        <div>
+            <h3>Sago Palm</h3>
+            <p>It has tough dark green tropical foliage. The palm is an unusual and edgy choice dor a room plant.
+            </p>
+            <h4>Sago Palm Care</h4>
+            <p>Sago palm loves medium to bright spots. The soil needs to be dry between waterings. It thrives under minimum care, so it will survive your busy college times.NASA research shows that having plants such as this palm in your room removes up to 87 percent of indoor pollutants.</p>
+        </div>
+    </div>
+    <!-- SECOND HALF -->
+    <div class="mobilecontentright">
+        <div>
+            <h3>Myosotis or Forget-Me-Not</h3>
+            <p>The plant has gray-green foliage and clusters of small, light-blue flowers. The plant releases oxygen into the air that can improve your sleep quality.
+            </p>
+            <h4>Forget-Me-Not Care:</h4>
+            <p>Requires little care. Grows best in moist but well-drained soil. The pot needs to have drainage holes. It can grow in nutrient-poor soil, so it is not necessary to fertilize them. Place it in full or partial sunlight place. In winter, reduce watering to about once or twice each month, since the plant is dormant. Do normal watering in spring.</p>
+        </div>
+        <img class="mobileimg" src="imgs/plants/forget_me_not.png">
+    </div>
+   
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/plants/aloe_vera.png">
+        <div>
+            <h3>Aloe</h3>
+            <p>Aloe can survive in various conditions with least maintains. The plant’s extracted juice can soothe skin and heal minor burns and cuts. According to studies from the American Horticultural Therapy Association, having plants such as aloe in your room promotes a sense of optimism and well-being
+            </p>
+            <h4>Aloe Care:</h4>
+            <p>Aloe likes bright light, so keep it near a window. Keep the soil needs to be evenly moisturized. The plant does not like to be too dry or too watered.</p>
+        </div>
+    </div>
+
+    <div class="mobilecontentright">
+        
+        <div>
+            <h3>Anthurium</h3>
+            <p>The plant has bright and shiny red or pink blooms with deep green leaves. This beautiful plant is easy to maintain, and it will make your room feel cozy. It is tolerant for different living conditions. If it receives enough sunlight, the plant will bloom all year around. Keeping a plant in your room improves mood and promotes goal achievement, according to studies by the American Horticultural Therapy association.
+            </p>
+            <h4>Anthurium Care:</h4>
+            <p>For best growing results, keep it in bright spot. The soil needs to be evenly moisturized.</p>
+        </div>
+        <img class="mobileimg" src="imgs/plants/anthurium.png">
+    </div>
+
+    <div class="mobilecontentleft">
+        <img class="mobileimg" src="imgs/plants/snake_plant.png">
+        <div>
+            <h3>Snake Plant</h3>
+            <p>Snake plant has vertical, striped leaves. It gives a trendy, modern look to your room. Studies by the American Horticultural Therapy Association show that caring for a plant increases levels of self-esteem.
+            </p>
+            <h4>Snake Plant Care:</h4>
+            <p>They are easy to maintain. The snake plant can grow in high, low, medium sunlight place. In addition, it istolerant to dry soil, therefore It is perfect choice for busy students. Needs to be watered once a week.</p>
+        </div>
+    </div>
+   
+    <div class="mobilecontentright">
+        <div>
+            <h3>Money Tree</h3>
+            <p>Money trees are frequently grown and braided together for a more interesting look and to resemble tropical bonsai. It gives a classy, sophisticated appearance to your dorm. A research study revealed people that have plants in their rooms experience less stress and heal faster than those without.
+            </p>
+            <h4>Money tree Care:</h4>
+            <p>The plant needs medium to bright light and evenly moist soil.</p>
+        </div>
+        <img class="mobileimg" src="imgs/plants/Artboard%204.png">
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+<script src="js/plants.js"></script>
+
+</body>
+
+</html>
