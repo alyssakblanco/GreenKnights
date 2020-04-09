@@ -15,7 +15,7 @@ var eight = document.getElementById("eight");
 one.onclick = function() {
     modal.style.display = "block";
     heading.innerText = "Bathroom Essentials";
-    description.innerText = "Plastic bathroom products end up in a landfill indefinitely, or in our oceans. Swap out items like hairbrushes, combs, q-tips, and toilet scrubbers for ones made out of wood.";
+    description.innerText = "Plastic bathroom products end up in a landfill indefinitely, or in our oceans. Swap out items like hairbrushes, combs, q-tips, and toilet scrubbers for ones made out of wood, or cotton.";
     link.setAttribute("href", "https://crazylittleprojects.com/easy-tote-bag-tutorial/");
     link.innerHTML="DIY TOTE-ally Cool Totes";
     link.setAttribute("href", "https://www.amazon.com/UNIVERSITY-CENTRAL-FLORIDA-FABRIC-100-YARD-GEOMETRIC/dp/B0763T24RL");
