@@ -17,7 +17,9 @@ one.onclick = function(){
 two.onclick = function(){
     modal.style.display = "block";
     heading.innerText = "Green curtains for certian!";
-    description.innerText = "Get crafty and make your own blinds from recycled textiles (like a flat sheet: Link to DIY). Save energy and keep those Florida cooling bills down by keeping them closed during the day.";
+    description.innerText = "Get crafty and make your own blinds from recycled textiles Save energy and keep those Florida cooling bills down by keeping them closed during the day.";
+    link.setAttribute("href", "https://www.youtube.com/watch?v=kYN1qXH0LNA");
+    link.innerHTML="DIY flat sheet curtains!<br>";
 }
 three.onclick = function(){
     modal.style.display = "block";
