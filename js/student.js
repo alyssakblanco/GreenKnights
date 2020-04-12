@@ -13,7 +13,7 @@ var five = document.getElementById("five");
     one.onclick = function(){
         modal.style.display = "block";
         heading.innerText = "Electronic Notetaking";
-        description.innerText = "Ditch those notebooks and use your laptop or tablet to take all your notes. Saves space in your backpack, prevents clutter, and you can sync your notes across devices!";
+        description.innerText = "Ditch those notebooks and use your laptop or tablet to take all your notes. This saves space in your backpack, prevents clutter, and you can sync your notes across devices!";
     }
     two.onclick = function(){
         modal.style.display = "block";
@@ -28,7 +28,7 @@ var five = document.getElementById("five");
     four.onclick = function(){
         modal.style.display = "block";
         heading.innerText = "Electronic Mail";
-        description.innerText = "Tired of getting tons of wasted paper junk in your mailbox? Save paper by opting out of junk mail letters and opt for e-staments from you service providers!";
+        description.innerText = "Tired of getting tons of wasted paper junk in your mailbox? Save paper by opting out of junk mail letters, and opt for e-staments from your service providers!";
     }
     five.onclick = function(){
         modal.style.display = "block";

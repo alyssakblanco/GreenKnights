@@ -11,30 +11,30 @@ var five = document.getElementById("five");
 
 one.onclick = function(){
     modal.style.display = "block";
-    heading.innerText = "Can we get a watt watt?";
+    heading.innerText = "Can We get a Watt Watt?";
     description.innerText = "Switching to LEDs is way more energy efficient, and LEDs don’t contain mercury like CFLs. Go natural and take advantage of natural light when needed.";
 }
 two.onclick = function(){
     modal.style.display = "block";
-    heading.innerText = "Green curtains for certian!";
-    description.innerText = "Get crafty and make your own blinds from recycled textiles Save energy and keep those Florida cooling bills down by keeping them closed during the day.";
+    heading.innerText = "Green Curtains for Certain!";
+    description.innerText = "Get crafty and make your own blinds from recycled textiles. You can also save energy and keep those Florida cooling bills down by keeping them closed during the day.";
     link.setAttribute("href", "https://www.youtube.com/watch?v=kYN1qXH0LNA");
     link.innerHTML="DIY flat sheet curtains!<br>";
 }
 three.onclick = function(){
     modal.style.display = "block";
-    heading.innerText = "Shop used furniture";
-    description.innerText = "Second hand furniture is easy to come by! Shop your local thrift, or online listings for lightly used furniture, or buy vintage pieces and give them a makeover.";
+    heading.innerText = "Shop Used Furniture";
+    description.innerText = "Second hand furniture is easy to come by! Shop your local thrift store, or online listings for lightly used furniture.You can also buy vintage pieces and give them a makeover!";
 }
 four.onclick = function(){
     modal.style.display = "block";
     heading.innerText = "Eco-friendly bedding";
-    description.innerText = "Eco friendly bedding consists of natural materials like cotton, or hemp as opposed to synthetic petroleum-based materials like polyester. ";
+    description.innerText = "Eco friendly bedding consists of natural materials like cotton or hemp, as opposed to synthetic petroleum-based materials like polyester.";
 }
 five.onclick = function(){
     modal.style.display = "block";
     heading.innerText = "Opt for essesntials";
-    description.innerText = "Say no to aerosol sprays and opt for natural scents like essential oils, or open up the windows for some good old fashioned fresh air. ";
+    description.innerText = "Say no to aerosol sprays and opt for natural scents like essential oils! You can also open up the windows for some good old fashioned fresh air.";
 }
 
 // MODAL FUNCTIONS

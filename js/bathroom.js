@@ -15,7 +15,7 @@ var eight = document.getElementById("eight");
 one.onclick = function() {
     modal.style.display = "block";
     heading.innerText = "Bathroom Essentials";
-    description.innerText = "Plastic bathroom products end up in a landfill indefinitely, or in our oceans. Swap out items like hairbrushes, combs, q-tips, and toilet scrubbers for ones made out of wood, or cotton.";
+    description.innerText = "Plastic bathroom products end up in a landfill indefinitely, or in our oceans. Swap out items like toothbrushes, hairbrushes, combs, q-tips, and toilet scrubbers for ones made out of wood or cotton.";
     link.setAttribute("href", "https://crazylittleprojects.com/easy-tote-bag-tutorial/");
     link.innerHTML="DIY TOTE-ally Cool Totes";
     link.setAttribute("href", "https://www.amazon.com/UNIVERSITY-CENTRAL-FLORIDA-FABRIC-100-YARD-GEOMETRIC/dp/B0763T24RL");
@@ -72,7 +72,7 @@ seven.onclick = function() {
 eight.onclick = function() {
     modal.style.display = "block";
     //heading.innerText ="heading";
-    description.innerText = "You can use reusable facial rounds instead of single-use cotton pads/balls";
+    description.innerText = "You can use reusable facial rounds instead of single-use cotton pads/balls. Cotton can be composted, but cotton pads/ball are often in plastic packaging.";
     link.setAttribute("href", "https://www.amazon.com/Remover-3-15inch-Reusable-Washable-Cleansing/dp/B07J55LS28/ref=sr_1_3?crid=1PSI6U8AGKMO0&keywords=reusable+facial+rounds&qid=1585590408&sprefix=reusable+facial%2Caps%2C181&sr=8-3");
     link.innerHTML="Buy here!";
 }
