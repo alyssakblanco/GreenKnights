@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 body{
     background-color: #fef7ea;
 }
@@ -7,12 +6,12 @@ body{
 h1{
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 6.5vh;
+    font-size: 4vh;
     color: #3E9228;
 }
 h2{
     font-family: 'Montserrat';
-    font-size: 4vh;
+    font-size: 3vh;
 }
 h3{
     font-family: 'Montserrat';
@@ -21,7 +20,7 @@ h3{
 }
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 2.8vh;
+    font-size: 2vh;
 }
 a{
     font-family: 'Roboto', sans-serif;
@@ -69,7 +68,6 @@ a{
     text-align: center;
     line-height: 2;
     z-index: 99;
-    top: 0;
 }
 #navButton{
     background-color: #bd4864;
@@ -95,12 +93,12 @@ a{
 }
 
 ul li a{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat';
     color: black;
     font-size: 3vh;
 }
 #greenNav{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat';
     color: green;
     font-size: 3vh;
     cursor: pointer;
